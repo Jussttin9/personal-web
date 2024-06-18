@@ -1,0 +1,29 @@
+/**
+* TODO:
+* - change background color to something more appealing
+* - figure out and replace picture
+* - figure out and replace title
+* - figure out how to size height to fit exactly to the end of the screen
+*/
+
+.container {
+    height: 83vh;   /* set height to 93vh to fill entire page*/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.title {
+    padding-left: 30px;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    row-gap: 1rem;
+}

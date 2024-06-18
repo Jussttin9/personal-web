@@ -1,0 +1,32 @@
+.container {
+    padding: 30px;
+}
+
+.subtitle {
+    font-weight: bolder;
+}
+
+.name-and-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    text-align: center;
+}
+
+.education {
+    padding: 20px;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.project {
+    
+}
+
+.additional {
+    padding: 20px;
+}

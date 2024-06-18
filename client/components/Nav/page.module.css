@@ -1,9 +1,11 @@
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
+    background-color: #fde3a2;
 }
 
 .page {
     padding: 20px;
-    background-color: aqua;
+    color: black;
+    text-decoration: none;
 }
