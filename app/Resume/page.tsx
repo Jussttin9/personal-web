@@ -9,7 +9,7 @@ export default function Resume() {
             <div className={styles.container}>
             <div className={styles.info}>
                 <h2>Justin Tran</h2>
-                <p>(415)361-0866 <strong>&#183;</strong> jr.tran79@gmail.com <strong>&#183;</strong> <a href="https://www.linkedin.com/in/justin-tran9/" target="_blank" className={styles.link}>https://www.linkedin.com/in/justin-tran9/</a> <strong>&#183;</strong> <a href="https://github.com/Jussttin9" target="_blank" className={styles.link}>https://github.com/Jussttin9</a></p>
+                <p>(415) 361-0866 <strong>&#183;</strong> jr.tran79@gmail.com <strong>&#183;</strong> <a href="https://www.linkedin.com/in/justin-tran9/" target="_blank" className={styles.link}>https://www.linkedin.com/in/justin-tran9/</a> <strong>&#183;</strong> <a href="https://github.com/Jussttin9" target="_blank" className={styles.link}>https://github.com/Jussttin9</a></p>
             </div>
             <div className={styles.education}>
                 <h3 className={styles.subtitle}>EDUCATION</h3>
