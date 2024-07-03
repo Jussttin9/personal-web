@@ -12,7 +12,7 @@ export default function Projects() {
     useEffect(() => {
         const cachedProjects = localStorage.getItem("projects");
 
-        if (false) {
+        if (cachedProjects) {
             setProjects(JSON.parse(cachedProjects));
         } else {
             const fetchedProjects = [
