@@ -4,7 +4,6 @@ import Link from 'next/link'
 /**
  * TODO: 
  * - at a specific screen size, make a dropdown bar from the top
- * - create parameters to set navbar buttons
  */
 
 type CurrentPage = 'Home' | 'About' | 'Projects' | 'Resume'

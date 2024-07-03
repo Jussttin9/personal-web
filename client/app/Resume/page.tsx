@@ -1,3 +1,4 @@
+"use client";
 import Nav from "@/components/Nav";
 import styles from "./page.module.css";
 
@@ -7,71 +8,96 @@ export default function Resume() {
             <Nav curPage="Resume"/>
             <div className={styles.container}>
             <div className={styles.info}>
-                <h2>name here</h2>
-                insert phone number, email, linkedin, github
+                <h2>Justin Tran</h2>
+                <p>(415)361-0866 <strong>&#183;</strong> jr.tran79@gmail.com <strong>&#183;</strong> <a href="https://www.linkedin.com/in/justin-tran9/" target="_blank" className={styles.link}>https://www.linkedin.com/in/justin-tran9/</a> <strong>&#183;</strong> <a href="https://github.com/Jussttin9" target="_blank" className={styles.link}>https://github.com/Jussttin9</a></p>
             </div>
             <div className={styles.education}>
-                <h3 className={styles.subtitle}>Education</h3>
+                <h3 className={styles.subtitle}>EDUCATION</h3>
                 <hr/>
                 <div className={styles['name-and-date']}>
-                    <p>School 1</p>
-                    <p>Date 1</p>
+                    <p>University of California, San Diego</p>
+                    <p>La Jolla, CA</p>
                 </div>
-                <ul>
-                    <li>bullet 1</li>
-                    <li>bullet 2</li>
-                </ul>
                 <div className={styles['name-and-date']}>
-                    <p>School 2</p>
-                    <p>Date 2</p>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p>Expected 2025</p>
                 </div>
-                <ul>
-                    <li>bullet 1</li>
-                    <li>bullet 2</li>
+                <ul className={styles.list}>
+                    <li>Cumulative GPA: 3.91</li>
+                    <li>Relevant Coursework: Software Tools and Techniques, Theory of Computation, Software Engineering</li>
                 </ul>
             </div>
             <main className={styles.projects}>
-                <h3 className={styles.subtitle}>Projects</h3>
+                <h3 className={styles.subtitle}>PROJECTS</h3>
                 <hr/>
                 <div className={styles.project}>
                     <div className={styles['name-and-date']}>
-                        <p>Project Name 1</p>
-                        <p>Location 1</p>
+                        <p>GeoGuru</p>
+                        <p>La Jolla, CA</p>
                     </div>
                     <div className={styles['name-and-date']}>
-                        <p>Role Title 1</p>
-                        <p>Date 1</p>
+                        <p>Backend Developer</p>
+                        <p>March 2024 - Present</p>
                     </div>
-                    <ul>
-                        <li>bullet 1</li>
-                        <li>bullet 2</li>
-                        <li>bullet 3</li>
-                        <li>bullet 4</li>
+                    <ul className={styles.list}>
+                        <li>Cooperated with a team to create a travel planner using ReactJS, CSS, Javascript, MongoDB, ExpressJS, and NodeJS focusing on establishing an intuitive itinerary platform for users to easily discover and plan nearby events</li>
+                        <li>Spearheaded a team of backend developers in implementing API routes using ExpressJS to manage itinerary data stored in MongoDB and integrate event information from various web APIs like Yelp API and OpenTripMap API.</li>
+                        <li>Implemented Firebase for user authorization and authentication, allowing users to access their travel plans across different devices.</li>
                     </ul>
                 </div>
                 <div className={styles.project}>
                     <div className={styles['name-and-date']}>
-                        <p>Project Name 2</p>
-                        <p>Location 2</p>
+                        <p>E-Waste Website</p>
+                        <p>La Jolla, CA</p>
                     </div>
                     <div className={styles['name-and-date']}>
-                        <p>Role Title 2</p>
-                        <p>Date 2</p>
+                        <p>Software Engineer</p>
+                        <p>April 2024 - June 2024</p>
                     </div>
-                    <ul>
-                        <li>bullet 1</li>
-                        <li>bullet 2</li>
-                        <li>bullet 3</li>
-                        <li>bullet 4</li>
+                    <ul className={styles.list}>
+                        <li>Led a team of developers and researchers to implement and deploy an informative website using Figma, ReactJS, NextJS, and Typescript aimed at educating college students about proper electronic waste disposal practices resulting in a 15% increase in campus-wide adherence to e-waste disposal guidelines.</li>
+                        <li>Crafted and developed a user-friendly UI using Figma and created reusable ReactJS components to establish seamless user-experiences for various different devices.</li>
+                        <li>Integrated NextJS UI components to enhance content organization and increase user engagement through a personality quiz.</li>
+                    </ul>
+                </div>
+                <div className={styles.project}>
+                    <div className={styles['name-and-date']}>
+                        <p>Developer Journal</p>
+                        <p>La Jolla, CA</p>
+                    </div>
+                    <div className={styles['name-and-date']}>
+                        <p>Full Stack Developer</p>
+                        <p>April 2024 - June 2024</p>
+                    </div>
+                    <ul className={styles.list}>
+                        <li>Collaborated with various feature teams to construct a journal for developers using HTML, CSS, and Javascript, allowing developers to easily store and document their designs and coding decisions.</li>
+                        <li>Optimized data storage through custom Javascript classes and localStorage, improving efficiency and execution when importing and exporting data.</li>
+                        <li>Integrated WebAPIs such as the ChatGPT API to implement a chatbot, allowing developers to receive real-time responses to prompts.</li>
+                    </ul>
+                </div>
+                <div className={styles.project}>
+                    <div className={styles['name-and-date']}>
+                        <p>Hackathon Dinosaur Evolution Simulator Project</p>
+                        <p>La Jolla, CA</p>
+                    </div>
+                    <div className={styles['name-and-date']}>
+                        <p>Software Engineer</p>
+                        <p>April 2024</p>
+                    </div>
+                    <ul className={styles.list}>
+                        <li>Won 5th place overall out of 300+ participants in a competitive hackathon.</li>
+                        <li>Led a team to develop a genetic algorithm, in Python, to model dinosaur behavior and evolution, to determine the most optimal dinosaur for a given environment.</li>
+                        <li>Collaborated closely with a team to implement modular environments using Pygame and contributed to the development of randomized level designs.</li>
+                        <li>Designed and tested a dynamic dinosaur behavior using machine learning algorithms and breeding system that allows for continuous evolution over several generations.</li>
                     </ul>
                 </div>
             </main>
             <footer className={styles.additional}>
-                <h3 className={styles.subtitle}>Additional</h3>
+                <h3 className={styles.subtitle}>ADDITIONAL</h3>
                 <hr/>
                     <ul>
-                        <li>bullet 1</li>
-                        <li>bullet 2</li>
+                        <li><strong>Programming: </strong>Java, C++, HTML, CSS, Javascript, Python, ReactJS, ExpressJS, NodeJS, NextJS, MongoDB, Typescript</li>
+                        <li><strong>Skills: </strong>Figma, Google Suite, Git</li>
                     </ul>
             </footer>
         </div>

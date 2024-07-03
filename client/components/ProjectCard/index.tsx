@@ -11,10 +11,17 @@ interface ProjectCardProps {
     children: ReactNode
 }
 
+function getClassName (deploy: string) {
+    if (deploy === "none") {
+        return styles.hidden
+    } else {
+        return styles.depl
+    }
+}
+
 /**
  * TODO:
  * - format card
- * - retrieve github icon
  * - decide on deploy icon
  * - create function where deploy icon only appears if provided with link
  * - dropdown for description maybe?
@@ -28,17 +35,32 @@ export default function ProjectCard({ proj_title, image, img_alt, github_link, d
                 {proj_title}
             </div>
             <Image
+                className={styles.img}
                 src={image}
-                width={300}
-                height={200}
+                width={500}
+                height={300}
                 alt={img_alt}
             />
             <div className={styles.desc}>
                 {children}
             </div>
             <div className={styles.links}>
-                <a href={github_link}>github link</a>
-                <a href={deploy}>deployed web</a>
+                <a href={github_link} target="_blank">
+                    <Image 
+                        src="github-mark.svg"
+                        width={58}
+                        height={56}
+                        alt="github link"    
+                    />
+                </a>
+                <a href={deploy} target="_blank" className={getClassName(deploy)}>
+                    <Image 
+                        src="/website.png"
+                        width={58}
+                        height={56}
+                        alt="website link"    
+                    /> 
+                </a>
             </div>
         </div>
     );

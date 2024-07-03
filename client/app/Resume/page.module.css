@@ -9,6 +9,8 @@
 .name-and-date {
     display: flex;
     justify-content: space-between;
+    margin-bottom: -30px;
+    font-weight: bolder;
 }
 
 .info {
@@ -27,6 +29,15 @@
     
 }
 
+.list {
+    margin-top: 30px;
+}
+
 .additional {
     padding: 20px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
 }

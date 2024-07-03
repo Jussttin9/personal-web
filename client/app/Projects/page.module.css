@@ -1,8 +1,24 @@
 .container {
     display:flex;
     flex-wrap: wrap;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 30px;
+}
+
+.modal {
+    position: fixed;
+    margin: 0 auto;
+    top: 17%;
+    z-index: 2;
+}
+
+.blur {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }

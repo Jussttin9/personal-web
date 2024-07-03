@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Image from "next/image"
-import Link from "next/link"
 import Nav from "../Nav";
 
 export default function Hero() {
@@ -9,19 +8,17 @@ export default function Hero() {
             <Nav curPage='Home'/>
             <div className={styles.container}>
                 <div className={styles.title}>
-                    title...
+                    Justin&apos;s Portfolio
                     <div className={styles.links}>
-                        <Link href="">&gt; boo1</Link>
-                        <Link href="">&gt; boo2</Link>
-                        <Link href="">&gt; boo3</Link>
                     </div>
                 </div>
-                <div>
+                <div className={styles.image}>
                     <Image 
-                    src="/emolga_and_pachurisu.jpg"
+                    src="/me.jpg"
                     alt="emolga and pachurisu"
-                    width={500}
-                    height={400}
+                    width={525}
+                    height={700}
+                    priority
                     />
                 </div>
             </div>
