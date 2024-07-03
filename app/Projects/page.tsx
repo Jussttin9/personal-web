@@ -5,14 +5,17 @@ import Nav from "@/components/Nav";
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
+const currentProjectVersion = "1.0"
+
 export default function Projects() {
     const [selectedId, setSelectedId] = useState<string | null>(null)
     const [projects, setProjects] = useState<any []>([])    
 
     useEffect(() => {
         const cachedProjects = localStorage.getItem("projects");
+        const cachedProjectVersion = localStorage.getItem("projectsVersion");
 
-        if (cachedProjects) {
+        if (cachedProjects && cachedProjectVersion === currentProjectVersion) {
             setProjects(JSON.parse(cachedProjects));
         } else {
             const fetchedProjects = [
@@ -68,6 +71,7 @@ export default function Projects() {
                 }
             ];
             localStorage.setItem("projects", JSON.stringify(fetchedProjects));
+            localStorage.setItem("projectsVersion", currentProjectVersion);
             setProjects(fetchedProjects);
         }
     }, []);
