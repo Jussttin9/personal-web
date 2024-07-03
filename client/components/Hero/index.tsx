@@ -9,11 +9,10 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.title}>
                     Justin&apos;s Portfolio
-                    <div className={styles.links}>
-                    </div>
                 </div>
                 <div className={styles.image}>
                     <Image 
+                    className={styles.img}
                     src="/me.jpg"
                     alt="emolga and pachurisu"
                     width={525}

@@ -7,7 +7,7 @@
 */
 
 .container {
-    height: 83vh;   /* set height to 93vh to fill entire page*/
+    height: 100vh;   /* set height to 93vh to fill entire page*/
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -16,10 +16,11 @@
 }
 
 .title {
-    padding-left: 30px;
     font-size: 100px;
     font-weight: 900;
     text-decoration: underline;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .links {
@@ -32,7 +33,32 @@
 .image {
     height: 700px;
     width: 525px;
+    margin-right: 30px;
     border: 40px solid #eadabc;
     border-radius: 20px;
     box-shadow: 5px 5px 2px 1px rgb(76, 54, 14);
+}
+
+/* 1503px */
+
+@media screen and (width < 1084px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .image {
+        height: 55%;
+        width: 41.25%;
+    }
+}
+
+@media screen and (width <= 541px) {
+    .img, .image {
+        display: none;
+    }
 }
