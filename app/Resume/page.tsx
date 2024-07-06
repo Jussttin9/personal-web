@@ -91,22 +91,6 @@ export default function Resume() {
                         <li>Designed and tested a dynamic dinosaur behavior using machine learning algorithms and breeding system that allows for continuous evolution over several generations.</li>
                     </ul>
                 </div>
-                <div className={styles.project}>
-                    <div className={styles['name-and-date']}>
-                        <p>Haunted Mansion</p>
-                        <p>San Francisco, CA</p>
-                    </div>
-                    <div className={styles['name-and-date']}>
-                        <p>Game Developer</p>
-                        <p>January 2023 - April 2023</p>
-                    </div>
-                    <ul className={styles.list}>
-                        <li>Programmed an engaging text-based game in C++ that immersed users in a captivating narrative.</li>
-                        <li>Utilized data structures such as dictionaries and stacks to effectively store and manage user progress and choices.</li>
-                        <li>Leveraged object-oriented principles to design a maintainable and scalable codebase, increasing code readability and improving gameplay experience.</li>
-                        <li>Implemented a dynamic story through dialogue and choices throughout the game, increasing replayability and user engagement.</li>
-                    </ul>
-                </div>
             </main>
             <footer className={styles.additional}>
                 <h3 className={styles.subtitle}>ADDITIONAL</h3>

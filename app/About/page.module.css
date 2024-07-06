@@ -1,16 +1,23 @@
 .about {
     height: 44vh;
-    background-color: antiquewhite;
     display: flex;
+    text-align: left;
     align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .container {
     display: flex;
     align-items: center;
+    column-gap: 30px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.link-container {
+    margin: 30px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
 }
