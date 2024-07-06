@@ -1,5 +1,5 @@
 .card {
-    background-color: #eadabc;
+    background-color: #e9edc9;
     display: flex;
     flex-direction: column;
     height: 650px;
@@ -23,7 +23,7 @@
 }
 
 .desc {
-    background-color: #dec194d5;  /* include or no? */
+    background-color: #ccd5ae;  /* include or no? */
     height: 150px;
     width: 550px;
     text-align: center;
