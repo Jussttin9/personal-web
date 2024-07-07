@@ -1,11 +1,12 @@
 import styles from "./page.module.css";
 import Image from "next/image"
 import Nav from "../Nav";
+import {motion} from "framer-motion";
 
 export default function Hero() {
     return (
         <div>
-            <Nav curPage='Home'/>
+            <Nav/>
             <div className={styles.container}>
                 <div className={styles.title}>
                     Justin&apos;s Portfolio
@@ -14,7 +15,7 @@ export default function Hero() {
                     <Image 
                     className={styles.img}
                     src="/me.jpg"
-                    alt="emolga and pachurisu"
+                    alt="a picture of me!"
                     width={525}
                     height={700}
                     priority

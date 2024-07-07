@@ -78,49 +78,56 @@ export default function Projects() {
 
     return (
         <div>
-            <Nav curPage="Projects"/>
-            <div className={styles.container}>
-                {projects.map(project => (
-                    <motion.div key={project.id} layoutId={project.id} onClick={() => setSelectedId(project.id)}>
-                        <ProjectCard
-                            proj_title={project.proj_title}
-                            image={project.image}
-                            img_alt={project.img_alt}
-                            github_link={project.github_link}
-                            deploy={project.deploy}
-                        >
-                            <div>
-                                {project.description} <br/><br/>
-                                <strong>{project.tech_used}</strong>
-                            </div>
-                        </ProjectCard>
-                    </motion.div>
-                ))}
-                <AnimatePresence>
-                    {selectedId && (
-                        <>
-                            <motion.div 
-                                className={styles.blur}
-                                onClick={() => setSelectedId(null)}
-                            />
-                            <motion.div className={styles.modal} layoutId={selectedId}>
-                                <ProjectCard
-                                    proj_title={projects.find(proj => proj.id === selectedId)?.proj_title || ""}
-                                    image={projects.find(proj => proj.id === selectedId)?.image || ""}
-                                    img_alt={projects.find(proj => proj.id === selectedId)?.img_alt || ""}
-                                    github_link={projects.find(proj => proj.id === selectedId)?.github_link || ""}
-                                    deploy={projects.find(proj => proj.id === selectedId)?.deploy || ""}
-                                >
-                                    <div>
-                                        {projects.find(proj => proj.id === selectedId)?.description || ""}<br/><br/>
-                                        <strong>{projects.find(proj => proj.id === selectedId)?.tech_used || ""}</strong>
-                                    </div>
-                                </ProjectCard>
-                            </motion.div>
-                        </>
-                    )}
-                </AnimatePresence>
-            </div>
+            <Nav/>
+            <motion.div
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -10, opacity: 0 }}
+                    transition={{ duration: 1 }}
+            >
+                <div className={styles.container}>
+                    {projects.map(project => (
+                        <motion.div key={project.id} layoutId={project.id} onClick={() => setSelectedId(project.id)}>
+                            <ProjectCard
+                                proj_title={project.proj_title}
+                                image={project.image}
+                                img_alt={project.img_alt}
+                                github_link={project.github_link}
+                                deploy={project.deploy}
+                            >
+                                <div>
+                                    {project.description} <br/><br/>
+                                    <strong>{project.tech_used}</strong>
+                                </div>
+                            </ProjectCard>
+                        </motion.div>
+                    ))}
+                    <AnimatePresence>
+                        {selectedId && (
+                            <>
+                                <motion.div 
+                                    className={styles.blur}
+                                    onClick={() => setSelectedId(null)}
+                                />
+                                <motion.div className={styles.modal} layoutId={selectedId}>
+                                    <ProjectCard
+                                        proj_title={projects.find(proj => proj.id === selectedId)?.proj_title || ""}
+                                        image={projects.find(proj => proj.id === selectedId)?.image || ""}
+                                        img_alt={projects.find(proj => proj.id === selectedId)?.img_alt || ""}
+                                        github_link={projects.find(proj => proj.id === selectedId)?.github_link || ""}
+                                        deploy={projects.find(proj => proj.id === selectedId)?.deploy || ""}
+                                    >
+                                        <div>
+                                            {projects.find(proj => proj.id === selectedId)?.description || ""}<br/><br/>
+                                            <strong>{projects.find(proj => proj.id === selectedId)?.tech_used || ""}</strong>
+                                        </div>
+                                    </ProjectCard>
+                                </motion.div>
+                            </>
+                        )}
+                    </AnimatePresence>
+                </div>
+            </motion.div>
         </div>
     );
 }
