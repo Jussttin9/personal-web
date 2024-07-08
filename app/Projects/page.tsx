@@ -78,7 +78,7 @@ export default function Projects() {
 
     return (
         <div>
-            <Nav/>
+            <Nav selected="Projects"/>
             <motion.div
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

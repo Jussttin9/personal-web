@@ -8,7 +8,7 @@ export default function About() {
     return (
         <AnimatePresence>
             <div>
-                <Nav/>
+                <Nav selected="About"/>
                 <motion.div
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 export default function Resume() {
     return (
         <div>
-            <Nav/>
+            <Nav selected="Resume"/>
             <motion.div
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

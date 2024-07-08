@@ -4,28 +4,18 @@ import Link from 'next/link';
 import {motion, AnimatePresence} from "framer-motion";
 import { useState } from "react";
 
-export default function Nav() {
-    const tabs = [
-        { label: 'Home' },
-        { label: 'About' },
-        { label: 'Projects' },
-        { label: 'Resume' }
-    ];
-    const [selectedTab, setSelectedTab] = useState(tabs[0]);
+interface NavProps {
+    selected: string
+}
 
+export default function Nav({selected} : NavProps) {
     return (
         <div>
             <nav className={styles['nav-bar']}>
-                    {tabs.map((item) => (
-                        <Link
-                            key={item.label}
-                            href={item.label === 'Home' ? '/' : `/${item.label}`}
-                            className={`${item === selectedTab ? "selected" : ""} ${styles.page}`}
-                            onClick={() => setSelectedTab(item)}
-                        >
-                            {`${item.label}`}
-                        </Link>
-                    ))}
+                <Link href='/' className={selected === 'Home' ? styles.selected : styles.page}>Home</Link>
+                <Link href='/About' className={selected === 'About' ? styles.selected : styles.page}>About</Link>
+                <Link href='/Projects' className={selected === 'Projects' ? styles.selected : styles.page}>Projects</Link>
+                <Link href='/Resume' className={selected === 'Resume' ? styles.selected : styles.page}>Resume</Link>
             </nav>
         </div>
         
