@@ -21,7 +21,7 @@
 
 @media screen and (width < 411px) {
     .selected {
-        padding: 20px;
+        padding: 10px;
         color: black;
         background-color: #faedcd;
         border-radius: 10px 10px 0px 0px; /* top-left top-right bottom-right bottom-left*/
