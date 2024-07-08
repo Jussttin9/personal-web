@@ -2,6 +2,7 @@
 import Nav from "@/components/Nav";
 import styles from "./page.module.css";
 import {motion} from "framer-motion";
+import Image from "next/image";
 
 export default function Resume() {
     return (
@@ -13,6 +14,20 @@ export default function Resume() {
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 1 }}
             >
+                <div className={styles.pdf}>
+                    <a href="Resume.pdf" target="_blank">
+                        View Resume PDF
+                        <Image
+                            className={styles.redirect}
+                            src="arrow-top-right.svg"
+                            alt="redirect arrow"
+                            height={25}
+                            width={25}
+                        />
+                    </a>
+                </div>
+                
+                <hr/>
                 <div className={styles.container}>
                     <div className={styles.info}>
                         <h2>Justin Tran</h2>
@@ -37,7 +52,7 @@ export default function Resume() {
                     <main className={styles.projects}>
                         <h3 className={styles.subtitle}>PROJECTS</h3>
                         <hr/>
-                        <div className={styles.project}>
+                        <div>
                             <div className={styles['name-and-date']}>
                                 <p>GeoGuru</p>
                                 <p>La Jolla, CA</p>
@@ -52,7 +67,7 @@ export default function Resume() {
                                 <li>Implemented Firebase for user authorization and authentication, allowing users to access their travel plans across different devices.</li>
                             </ul>
                         </div>
-                        <div className={styles.project}>
+                        <div>
                             <div className={styles['name-and-date']}>
                                 <p>E-Waste Website</p>
                                 <p>La Jolla, CA</p>
@@ -67,7 +82,7 @@ export default function Resume() {
                                 <li>Integrated NextJS UI components to enhance content organization and increase user engagement through a personality quiz.</li>
                             </ul>
                         </div>
-                        <div className={styles.project}>
+                        <div>
                             <div className={styles['name-and-date']}>
                                 <p>Developer Journal</p>
                                 <p>La Jolla, CA</p>
@@ -82,7 +97,7 @@ export default function Resume() {
                                 <li>Integrated WebAPIs such as the ChatGPT API to implement a chatbot, allowing developers to receive real-time responses to prompts.</li>
                             </ul>
                         </div>
-                        <div className={styles.project}>
+                        <div>
                             <div className={styles['name-and-date']}>
                                 <p>Hackathon Dinosaur Evolution Simulator Project</p>
                                 <p>La Jolla, CA</p>
