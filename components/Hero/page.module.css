@@ -1,23 +1,16 @@
-/**
-* TODO:
-* - figure out and replace title
-*/
-
 .container {
-    height: 100vh;
+    height: fit-content;
     display: flex;
-    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
+    border: 20px solid #eadabc;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px 1px rgb(76, 54, 14);
+    margin-right: 30px;
 }
 
 .title {
@@ -35,42 +28,26 @@
     row-gap: 1rem;
 }
 
-.img {
-    border: 20px solid #eadabc;
-    border-radius: 20px;
-    box-shadow: 5px 5px 2px 1px rgb(76, 54, 14);
-}
-
-/* 1503px */
-
-@media screen and ((width < 1084px) or (height < 900px)) {
+@media screen and (width < 1084px) {
+    .container {
+        flex-direction: column;
+    }
+  
     .title {
         font-size: 60px;
     }
 
-    .img {
-        height: 55%;
-        width: 41.25%;
-    }
-
     .image {
-        height: 55%;
-        width: 41.25%;
-    }
-}
-
-@media screen and (height < 700px) and (width > 541px) {
-    .container {
-        flex-wrap: nowrap;
+        margin-right: 0px;
     }
 }
 
 @media screen and (width <= 541px) {
-    .container {
-        margin-right: 0px;
+    .image {
+        display: none;
     }
 
-    .img, .image {
-        display: none;
+    .container {
+        height: 100vh;
     }
 }

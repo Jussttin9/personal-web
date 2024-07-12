@@ -19,15 +19,6 @@ function getClassName (deploy: string) {
     }
 }
 
-/**
- * TODO:
- * - format card
- * - decide on deploy icon
- * - create function where deploy icon only appears if provided with link
- * - dropdown for description maybe?
- * - choose a different background project card color
- */
-
 export default function ProjectCard({ proj_title, image, img_alt, github_link, deploy, children }: ProjectCardProps) {
     return (
         <div className={styles.card}>

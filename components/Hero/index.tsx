@@ -16,11 +16,11 @@ export default function Hero() {
             >
                 <div className={styles.container}>
                     <div className={styles.title}>
-                        Justin&apos;s Portfolio
+                        Justin Tran
                     </div>
-                    <div className={styles.image}>
-                        <Image 
-                        className={styles.img}
+                    <div>
+                        <Image
+                        className={styles.image} 
                         src="/me.jpg"
                         alt="a picture of me!"
                         width={525}
