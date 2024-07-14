@@ -28,7 +28,7 @@ export default function Hero() {
                         priority
                         />
                     </div>
-                </div>  
+                </div>
             </motion.div>
         </div>
     );

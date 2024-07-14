@@ -4,6 +4,8 @@ import Image from "next/image";
 
 interface ProjectCardProps {
     proj_title: string,
+    location: string,
+    date: string,
     image: string,
     img_alt: string,
     github_link: string,
@@ -19,11 +21,19 @@ function getClassName (deploy: string) {
     }
 }
 
-export default function ProjectCard({ proj_title, image, img_alt, github_link, deploy, children }: ProjectCardProps) {
+export default function ProjectCard({ proj_title, location, date, image, img_alt, github_link, deploy, children }: ProjectCardProps) {
     return (
         <div className={styles.card}>
             <div className={styles.title}>
                 {proj_title}
+            </div>
+            <div className={styles.subtitle}>
+                <strong>
+                    <div> {location} </div>
+                </strong>
+                <strong>
+                    <div> {date} </div>
+                </strong>
             </div>
             <Image
                 className={styles.img}

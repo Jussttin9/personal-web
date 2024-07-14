@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
-const currentProjectVersion = "1.0"
+const currentProjectVersion = "1.1"
 
 export default function Projects() {
     const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -22,6 +22,8 @@ export default function Projects() {
                 {
                     id: "GeoGuru",
                     proj_title: "GeoGuru",
+                    location: "La Jolla, CA",
+                    date: "March 2024 - Present",
                     image: "/geoguru.png",
                     img_alt: "geoguru homepage",
                     github_link: "https://github.com/acmucsd-projects/sp24-hack-team-2",
@@ -32,6 +34,8 @@ export default function Projects() {
                 {
                     id: "E-Waste Website",
                     proj_title: "E-Waste Website",
+                    location: "La Jolla, CA",
+                    date: "April 2024 - June 2024",
                     image: "/e-waste.png",
                     img_alt: "e-waste website homepage",
                     github_link: "https://github.com/Jussttin9/ewaste-project",
@@ -42,6 +46,8 @@ export default function Projects() {
                 {
                     id: "Developer Journal",
                     proj_title: "Developer Journal",
+                    location: "La Jolla, CA",
+                    date: "April 2024 - June 2024",
                     image: "/dev-journal.png",
                     img_alt: "developer journal app",
                     github_link: "https://github.com/cse110-sp24-group32/cse110-sp24-group32",
@@ -52,6 +58,8 @@ export default function Projects() {
                 {
                     id: "Datasaur Royale",
                     proj_title: "Datasaur Royale",
+                    location: "La Jolla, CA",
+                    date: "April 2024",
                     image: "/datasaur-royale.png",
                     img_alt: "datasaur royale app preview",
                     github_link: "https://github.com/Jussttin9/DatasaurRoyale",
@@ -62,6 +70,8 @@ export default function Projects() {
                 {
                     id: "Haunted Mansion",
                     proj_title: "Haunted Mansion",
+                    location: "San Francisco, CA",
+                    date: "January 2023 - April 2023",
                     image: "/option.png",
                     img_alt: "haunted mansion start menu",
                     github_link: "https://github.com/Jussttin9/Haunted-Mansion",
@@ -90,6 +100,8 @@ export default function Projects() {
                         <motion.div key={project.id} layoutId={project.id} onClick={() => setSelectedId(project.id)}>
                             <ProjectCard
                                 proj_title={project.proj_title}
+                                location={project.location}
+                                date={project.date}
                                 image={project.image}
                                 img_alt={project.img_alt}
                                 github_link={project.github_link}
@@ -112,6 +124,8 @@ export default function Projects() {
                                 <motion.div className={styles.modal} layoutId={selectedId}>
                                     <ProjectCard
                                         proj_title={projects.find(proj => proj.id === selectedId)?.proj_title || ""}
+                                        location={projects.find(proj => proj.location === selectedId)?.location || ""}
+                                        date={projects.find(proj => proj.date === selectedId)?.date || ""}
                                         image={projects.find(proj => proj.id === selectedId)?.image || ""}
                                         img_alt={projects.find(proj => proj.id === selectedId)?.img_alt || ""}
                                         github_link={projects.find(proj => proj.id === selectedId)?.github_link || ""}

@@ -1,9 +1,9 @@
 .container {
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
+    margin: 0 auto;
 }
 
 .image {
@@ -45,6 +45,10 @@
 @media screen and (width <= 541px) {
     .image {
         display: none;
+    }
+
+    .title {
+        font-size: 45px;
     }
 
     .container {
