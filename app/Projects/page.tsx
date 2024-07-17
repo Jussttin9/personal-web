@@ -124,8 +124,8 @@ export default function Projects() {
                                 <motion.div className={styles.modal} layoutId={selectedId}>
                                     <ProjectCard
                                         proj_title={projects.find(proj => proj.id === selectedId)?.proj_title || ""}
-                                        location={projects.find(proj => proj.location === selectedId)?.location || ""}
-                                        date={projects.find(proj => proj.date === selectedId)?.date || ""}
+                                        date={projects.find(proj => proj.id === selectedId)?.date || ""}
+                                        location={projects.find(proj => proj.id === selectedId)?.location || ""}
                                         image={projects.find(proj => proj.id === selectedId)?.image || ""}
                                         img_alt={projects.find(proj => proj.id === selectedId)?.img_alt || ""}
                                         github_link={projects.find(proj => proj.id === selectedId)?.github_link || ""}

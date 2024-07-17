@@ -25,6 +25,8 @@ export default function About() {
                         />
                         <div className={styles.about}>
                             <p>
+                                Hi my name is Justin Tran. I am from San Francisco and I am a Computer Science Major at University of California, San Diego.<br/><br/>
+
                                 I&apos;ve always been amazed by the amount of work that indie developers had put into their work to make users have enjoyable and memorable experiences. Because of this I decided to try coding my first project in high school, a quiz that allows users familiar with a certain tv show to answer questions and test their knowledge. I then expanded by making a text-based game and a dynamic battle simulation. In addition to games, I was also interested in creating websites that could help users in everyday life. <br/><br/>
                                 
                                 I&apos;ve been using my free time to learn a lot more about web development. In that time, I&apos;ve been able to create useful applications that assist users organize their thoughts and even spread awareness to current issues like climate change. I enjoy combining both of my interests by trying to implement appealing or fun elements to my websites such as an activity or simply by adding a more aesthetic and more interactive look to the website. <br/><br/>
