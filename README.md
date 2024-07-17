@@ -8,8 +8,6 @@
 If you're interested take a [look](https://justin-tran-portfolio.vercel.app/)!
 </div>
 
-If you're interested take a [look](https://justin-tran-portfolio.vercel.app/)!</p>
-
 ## Setup & Run
 1. Install dependencies
 ```
