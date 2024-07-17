@@ -1,7 +1,7 @@
-<h1 style="text-align: center;">
+<h1 align="center">
     Justin Tran
 </h1>
-<hr>
+<p align="center">Built with <a href="https://nextjs.org/docs/getting-started/installation">Next.JS</a> (powered by React) and hosted with <a href="https://vercel.com/">Vercel</a></p>
 
 Hi I'm Justin Tran and welcome to my personal portfolio, where I can showcase all of my previous and current projects and most of all, things about me!
 
