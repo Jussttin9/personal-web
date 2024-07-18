@@ -26,7 +26,7 @@ export default function Projects() {
                     date: "March 2024 - Present",
                     image: "/geoguru.png",
                     img_alt: "geoguru homepage",
-                    github_link: "https://github.com/acmucsd-projects/sp24-hack-team-2",
+                    github_link: "https://github.com/Jussttin9/GeoGuru",
                     deploy: "none",
                     description: "GeoGuru is a travel planner where users can create their own itinerary. Users enter their desired location of travel, conditions of times to go out, and theme of activities, and this application will provide a list of nearby events that the user can then plan and add to their itinerary. The application requires that users create an account, which allows it to save each user's vacation plans across different devices.",
                     tech_used: "Technologies Used: OpenTripMap API, Yelp API, FireBase, ReactJS, CSS, Javascript, MongoDB, ExpressJS, NodeJS, Figma."
