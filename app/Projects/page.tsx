@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
-const currentProjectVersion = "1.1"
+const currentProjectVersion = "1.2"
 
 export default function Projects() {
     const [selectedId, setSelectedId] = useState<string | null>(null)
