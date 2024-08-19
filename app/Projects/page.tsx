@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
-const currentProjectVersion = "1.2"
+const currentProjectVersion = "1.3"
 
 export default function Projects() {
     const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -23,11 +23,11 @@ export default function Projects() {
                     id: "GeoGuru",
                     proj_title: "GeoGuru",
                     location: "La Jolla, CA",
-                    date: "March 2024 - Present",
+                    date: "April 2024 - August 2024",
                     image: "/geoguru.png",
                     img_alt: "geoguru homepage",
                     github_link: "https://github.com/Jussttin9/GeoGuru",
-                    deploy: "none",
+                    deploy: "https://geo-guru.vercel.app/",
                     description: "GeoGuru is a travel planner where users can create their own itinerary. Users enter their desired location of travel, conditions of times to go out, and theme of activities, and this application will provide a list of nearby events that the user can then plan and add to their itinerary. The application requires that users create an account, which allows it to save each user's vacation plans across different devices.",
                     tech_used: "Technologies Used: OpenTripMap API, Yelp API, FireBase, ReactJS, CSS, Javascript, MongoDB, ExpressJS, NodeJS, Figma."
                 },

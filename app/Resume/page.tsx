@@ -59,7 +59,7 @@ export default function Resume() {
                             </div>
                             <div className={styles['name-and-date']}>
                                 <p>Backend Developer</p>
-                                <p>March 2024 - Present</p>
+                                <p>April 2024 - August 2024</p>
                             </div>
                             <ul className={styles.list}>
                                 <li>Cooperated with a team to create a travel planner using ReactJS, CSS, Javascript, MongoDB, ExpressJS, and NodeJS focusing on establishing an intuitive itinerary platform for users to easily discover and plan nearby events</li>
