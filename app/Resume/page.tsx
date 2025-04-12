@@ -62,8 +62,8 @@ export default function Resume() {
                         </div>
                         <ul className={styles.list}>
                             <li>Designed scalable, reusable, and robust solutions using PHP and Tailwind CSS to implement and maintain a marketing website based on user story acceptance criteria in a team-based environment, improving overall performance by 20% and engagement by 15%.</li>
-                            <li>Developed and optimized OpenSearch queries to enhance an internal business tool, enabling real-time retrieval of business data from AWS S3, resulting in an increase in accuracy of 20% and improving performance by 10%.</li>
-                            <li>Collaborated with Engineering teams to enhance automation processes using Cypress, contributing to strategic planning for future implementations.</li>
+                            <li>Developed and optimized OpenSearch queries to enhance an internal business tool, enabling real-time retrieval of business data from AWS S3, resulting in an increase of search accuracy by 20% and improving performance by 10%.</li>
+                            <li>Created end-to-end UI tests using Cypress, automating user workflows, validating over 25 different features.</li>
                         </ul>
                     </div>
                     <main className={styles.projects}>
@@ -136,7 +136,7 @@ export default function Resume() {
                         <hr/>
                             <ul>
                                 <li><strong>Programming: </strong>Java, C++, HTML, CSS, Javascript, Python, ReactJS, ExpressJS, NodeJS, NextJS, MongoDB, Typescript, Tailwind CSS, PHP, Svelte</li>
-                                <li><strong>Skills: </strong>Figma, Google Suite, Git, GitLab, WordPress, Cypress</li>
+                                <li><strong>Skills: </strong>Figma, Google Suite, GitLab, WordPress, Cypress, Jira</li>
                             </ul>
                     </footer>
                 </div>
