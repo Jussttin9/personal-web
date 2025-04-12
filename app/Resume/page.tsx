@@ -46,7 +46,7 @@ export default function Resume() {
                         </div>
                         <ul className={styles.list}>
                             <li>Cumulative GPA: 3.91</li>
-                            <li>Relevant Coursework: Software Tools and Techniques, Theory of Computation, Software Engineering, Web Client Languages</li>
+                            <li>Relevant Coursework: Data Structures and Algorithms, Theory of Computation, Software Engineering, Web Client Languages</li>
                         </ul>
                     </div>
                     <div className={styles.education}>
