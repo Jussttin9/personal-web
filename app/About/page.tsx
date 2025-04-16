@@ -39,17 +39,23 @@ export default function About() {
                     </div>
                     <hr/>
                     <div className={styles['link-container']}>
-                        <a href="https://github.com/Jussttin9" target="_blank"><Image
+                        <a className={styles.github} href="https://github.com/Jussttin9" target="_blank"><Image
                             src="github-mark.svg"
                             alt="github icon"
                             height={45}
                             width={45}
                         /></a>
-                        <a href="https://www.linkedin.com/in/justin-tran9/" target="_blank"><Image
+                        <a className={styles.linkedIn} href="https://www.linkedin.com/in/justin-tran9/" target="_blank"><Image
                             src="/LI-In-Bug.png"
                             alt="linkedin icon"
                             height={45}
-                            width={50}
+                            width={55}
+                        /></a>
+                        <a className={styles.email} href="mailto:jr.tran79@gmail.com" target="_blank"><Image
+                            src="email.svg"
+                            alt="email icon"
+                            height={60}
+                            width={60}
                         /></a>
                     </div>
                 </motion.div>

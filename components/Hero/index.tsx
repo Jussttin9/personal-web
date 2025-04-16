@@ -15,8 +15,10 @@ export default function Hero() {
                     transition={{ duration: 1 }}
             >
                 <div className={styles.container}>
-                    <div className={styles.title}>
-                        Justin Tran
+                    <div className={styles.intro}>
+                        <h2>Hey! My name is</h2>
+                        <h1 className={styles.title}>Justin Tran</h1>
+                        <h2>Software Engineer</h2>
                     </div>
                     <div>
                         <Image

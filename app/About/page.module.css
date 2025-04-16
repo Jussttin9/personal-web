@@ -21,6 +21,11 @@
     column-gap: 20px;
 }
 
+.email {
+    margin-top: -0.5rem;
+    margin-left: -0.75rem;
+}
+
 @media screen and (width <= 830px) {
     .container {
         flex-direction: column;
