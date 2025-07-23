@@ -38,15 +38,26 @@ export default function Resume() {
                         <hr/>
                         <div className={styles['name-and-date']}>
                             <p>University of California, San Diego</p>
-                            <p>La Jolla, CA</p>
+                            <p>Sep 2023 – Jun 2025</p>
                         </div>
                         <div className={styles['name-and-date']}>
-                            <p>Bachelor of Science in Computer Science</p>
-                            <p>Expected 2025</p>
+                            <p>Bachelor of Science in Computer Science, Cumulative GPA: 3.91/4.00</p>
+                            <p>San Diego, CA</p>
                         </div>
                         <ul className={styles.list}>
-                            <li>Cumulative GPA: 3.91</li>
-                            <li>Relevant Coursework: Data Structures and Algorithms, Theory of Computation, Software Engineering, Web Client Languages</li>
+                            <li><b>Relevant Coursework:</b> Data Structures and Algorithms, Intro to Parallel Computing, Software Engineering, Operating
+Systems, Web Client Languages, AI: Search and Reasoning</li>
+                        </ul>
+                        <div className={styles['name-and-date']}>
+                            <p>City College of San Francisco</p>
+                            <p>Aug 2021 – Jun 2023</p>
+                        </div>
+                        <div className={styles['name-and-date']}>
+                            <p>Bachelor of Science in Computer Science, Cumulative GPA: 4.00/4.00</p>
+                            <p>San Francisco, CA</p>
+                        </div>
+                        <ul className={styles.list}>
+                            <li><b>Relevant Coursework:</b> Programming Fundamentals: Java, Programming Fundamentals: C++</li>
                         </ul>
                     </div>
                     <div className={styles.education}>
@@ -54,16 +65,21 @@ export default function Resume() {
                         <hr/>
                         <div className={styles['name-and-date']}>
                             <p>Trulioo</p>
-                            <p>San Diego, CA</p>
+                            <p>Sep 2024 - Present</p>
                         </div>
                         <div className={styles['name-and-date']}>
                             <p>Junior Software Engineer Intern</p>
-                            <p>September 2024 - Present</p>
+                            <p>San Diego, CA</p>
                         </div>
                         <ul className={styles.list}>
-                            <li>Designed scalable, reusable, and robust solutions using PHP and Tailwind CSS to implement and maintain a marketing website based on user story acceptance criteria in a team-based environment, improving overall performance by 20% and engagement by 15%.</li>
-                            <li>Developed and optimized OpenSearch queries to enhance an internal business tool, enabling real-time retrieval of business data from AWS S3, resulting in an increase of search accuracy by 20% and improving performance by 10%.</li>
-                            <li>Created end-to-end UI tests using Cypress, automating user workflows, validating over 25 different features.</li>
+                            <li>Designed and implemented scalable, maintainable features for a marketing website using Laravel and Tailwind CSS,
+streamlining ACF blocks and resolving UX bugs based on user story acceptance criteria, enhancing user experience.</li>
+                            <li>Refactored JavaScript files to improve code minification through Cloudflare, leading to a 20% increase in page
+performance as measured by load time and total blocking time, and contributing to a 15% rise in user engagement.</li>
+                            <li>Optimized OpenSearch queries and analyzers to strengthen tokenization and filtering, increasing search accuracy by 20%
+and data throughput by 10%, and delivering faster real-time retrieval of firmographic data from AWS S3.</li>
+                            <li>Automated end-to-end UI tests using Cypress in GitLab, validating 25+ user-facing features such as page rendering, iframe
+loading, and dropdown filtering, which improved test coverage and reduced deployment risk.</li>
                         </ul>
                     </div>
                     <main className={styles.projects}>
@@ -72,71 +88,61 @@ export default function Resume() {
                         <div>
                             <div className={styles['name-and-date']}>
                                 <p>GeoGuru</p>
-                                <p>La Jolla, CA</p>
+                                <p>Apr 2024 - Aug 2024</p>
                             </div>
                             <div className={styles['name-and-date']}>
                                 <p>Backend Developer</p>
-                                <p>April 2024 - August 2024</p>
+                                <p>San Diego, CA</p>
                             </div>
                             <ul className={styles.list}>
-                                <li>Cooperated with a team to create a travel planner using ReactJS, CSS, Javascript, MongoDB, ExpressJS, and NodeJS focusing on establishing an intuitive itinerary platform for users to easily discover and plan nearby events</li>
+                                <li>Designed a travel planner in a team of 6 developers and designers by building a backend server on Vercel with Node.js,
+Express.js, MongoDB, and Firebase, and creating RESTful APIs and a database schema to boost query performance.</li>
                                 <li>Spearheaded a team of backend developers in implementing API routes using ExpressJS to manage itinerary data stored in MongoDB and integrate event information from various web APIs like Yelp API and OpenTripMap API.</li>
-                                <li>Implemented Firebase for user authorization and authentication, allowing users to access their travel plans across different devices.</li>
+                                <li>Implemented Firebase Authentication with token-based JWTs for secure user authorization and authentication, allowing
+seamless access to travel plans across devices, while protecting backend routes from unauthorized access.</li>
                             </ul>
                         </div>
                         <div>
                             <div className={styles['name-and-date']}>
                                 <p>E-Waste Website</p>
-                                <p>La Jolla, CA</p>
+                                <p>Apr 2024 – Jun 2024</p>
                             </div>
                             <div className={styles['name-and-date']}>
                                 <p>Software Engineer</p>
-                                <p>April 2024 - June 2024</p>
+                                <p>San Diego, CA</p>
                             </div>
                             <ul className={styles.list}>
-                                <li>Led a team of developers and researchers to implement and deploy an informative website using Figma, ReactJS, NextJS, and Typescript aimed at educating college students about proper electronic waste disposal practices resulting in a 15% increase in campus-wide adherence to e-waste disposal guidelines.</li>
-                                <li>Crafted and developed a user-friendly UI using Figma and created reusable ReactJS components to establish seamless user-experiences for various different devices.</li>
-                                <li>Integrated NextJS UI components to enhance content organization and increase user engagement through a personality quiz.</li>
+                                <li>Led a team of 4 to build and launch a responsive educational website using React, Next.js, and TypeScript, contributing to
+a 15% increase in e-waste compliance by raising student awareness of recycling practices and drop-off locations.</li>
+                                <li>Developed a user-friendly interface in Figma and implemented responsive React.js components with Material UI, CSS
+Grid, and media queries, ensuring cross-device compatibility through manual testing.</li>
                             </ul>
                         </div>
                         <div>
                             <div className={styles['name-and-date']}>
                                 <p>Developer Journal</p>
-                                <p>La Jolla, CA</p>
+                                <p>Apr 2024 – Jun 2024</p>
                             </div>
                             <div className={styles['name-and-date']}>
                                 <p>Full Stack Developer</p>
-                                <p>April 2024 - June 2024</p>
+                                <p>San Diego, CA</p>
                             </div>
                             <ul className={styles.list}>
-                                <li>Collaborated with various feature teams to construct a journal for developers using HTML, CSS, and Javascript, allowing developers to easily store and document their designs and coding decisions.</li>
-                                <li>Optimized data storage through custom Javascript classes and localStorage, improving efficiency and execution when importing and exporting data.</li>
-                                <li>Integrated WebAPIs such as the ChatGPT API to implement a chatbot, allowing developers to receive real-time responses to prompts.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div className={styles['name-and-date']}>
-                                <p>Hackathon Dinosaur Evolution Simulator Project</p>
-                                <p>La Jolla, CA</p>
-                            </div>
-                            <div className={styles['name-and-date']}>
-                                <p>Software Engineer</p>
-                                <p>April 2024</p>
-                            </div>
-                            <ul className={styles.list}>
-                                <li>Won 5th place overall out of 300+ participants in a competitive hackathon.</li>
-                                <li>Led a team to develop a genetic algorithm, in Python, to model dinosaur behavior and evolution, to determine the most optimal dinosaur for a given environment.</li>
-                                <li>Collaborated closely with a team to implement modular environments using Pygame and contributed to the development of randomized level designs.</li>
-                                <li>Designed and tested a dynamic dinosaur behavior using machine learning algorithms and breeding system that allows for continuous evolution over several generations.</li>
+                                <li>Created and deployed a static developer journal with HTML/CSS, and JavaScript in collaboration with feature teams,
+allowing developers to easily store entries, document design decisions, and record coding workflows.</li>
+                                <li>Optimized data storage using custom JavaScript classes and localStorage to speed up journal entry handling, and
+integrated the OpenAI API to build an internal chatbot modal that delivers instant, contextual responses to developer
+prompts.</li>
                             </ul>
                         </div>
                     </main>
                     <footer className={styles.additional}>
-                        <h3 className={styles.subtitle}>ADDITIONAL</h3>
+                        <h3 className={styles.subtitle}>Technical Skills</h3>
                         <hr/>
                             <ul>
-                                <li><strong>Programming: </strong>Java, C++, HTML, CSS, Javascript, Python, ReactJS, ExpressJS, NodeJS, NextJS, MongoDB, Typescript, Tailwind CSS, PHP, Svelte</li>
-                                <li><strong>Skills: </strong>Figma, Google Suite, GitLab, WordPress, Cypress, Jira</li>
+                                <li><strong>Programming Languages: </strong>Java, C++, Python, JavaScript, TypeScript, PHP, HTML/CSS</li>
+                                <li><strong>Tools/Frameworks: </strong>React, Next.js, Express.js, Node.js, Svelte, Laravel, Tailwind CSS, Firebase, MongoDB, Opensearch, Cypress, Docker, WordPress, GitLab, Jira, Figma, Google Suite</li>
+                                <li><strong>Technical Competencies: </strong>Performance Optimization, Query Optimization, API Integration, End-to-End Testing, UI/UX Design, Database Management, Cloud Services</li>
                             </ul>
                     </footer>
                 </div>
