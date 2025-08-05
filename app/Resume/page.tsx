@@ -41,7 +41,7 @@ export default function Resume() {
                             <p>Sep 2023 – Jun 2025</p>
                         </div>
                         <div className={styles['name-and-date']}>
-                            <p>Bachelor of Science in Computer Science, Cumulative GPA: 3.91/4.00</p>
+                            <p>Bachelor of Science in Computer Science, Cumulative GPA: 3.83/4.00</p>
                             <p>San Diego, CA</p>
                         </div>
                         <ul className={styles.list}>
